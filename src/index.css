@@ -14,6 +14,12 @@
 }
 
 @font-face {
+    font-family: "TerminaTestExtraLight";
+    src: url("./assets/fonts/TerminaTest/TerminaTest-ExtraLight.otf")
+        format("opentype");
+}
+
+@font-face {
     font-family: "Noto Serif JP";
     src: url("./fonts/NotoSerifJP.woff2") format("woff2");
     font-weight: 200;
@@ -50,6 +56,8 @@ body {
 /*------------ HEADER SECTION ------------ */
 .header {
     position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,8 +82,9 @@ body {
 }
 
 .header-title {
-    font-family: "TerminaTestNormal";
-    font-size: 20px;
+    font-family: "TerminaTestExtraLight";
+    font-size: 17px;
+    letter-spacing: 2px;
 }
 
 #first-name {
@@ -83,7 +92,7 @@ body {
 }
 
 #last-name {
-    font-weight: 100;
+    font-weight: 10;
 }
 
 .version {
@@ -133,11 +142,12 @@ body {
 }
 
 .hero-name {
-    font-family: "TerminaTestNormal";
+    font-family: "Cormorant Garamond", serif;
+
     font-size: 48px;
 }
 
-.hero-handle {
+.hero-handle-text {
     font-size: 10px;
     letter-spacing: 2px;
     opacity: 0.5;

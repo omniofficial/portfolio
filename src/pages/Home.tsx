@@ -9,7 +9,9 @@ export default function Home() {
             <section id="home" className="hero">
                 <div className="hero-center">
                     <h1 className="hero-name">Adrian Diaz</h1>
-                    <p className="hero-handle">@omniofficial</p>
+                    <div className="hero-handle">
+                        <p className="hero-handle-text">@omniofficial</p>
+                    </div>
                 </div>
 
                 <p className="hero-quote">

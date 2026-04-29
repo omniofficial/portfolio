@@ -1,4 +1,3 @@
-import logo from "../assets/logo.png";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 
@@ -7,20 +6,56 @@ export default function Home() {
         <main>
             <Header />
 
-            <section id="home">
-                <h1>Main Title</h1>
-                <p>Welcome to my portfolio</p>
+            <section id="home" className="hero">
+                <div className="hero-center">
+                    <h1 className="hero-name">Adrian Diaz</h1>
+                    <p className="hero-handle">@omniofficial</p>
+                </div>
+
+                <p className="hero-quote">
+                    "A future is not given to you. It is something you must take
+                    for yourself."
+                </p>
             </section>
 
-            <section id="projects">
-                <h2>Projects</h2>
-                <p>My work goes here...</p>
-            </section>
+            <div className="page">
+                <div className="divider" />
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>Email: example@email.com</p>
-            </section>
+                <section className="about">
+                    <h1 className="subtitle">ABOUT ME</h1>
+                    <p>
+                        Pursuing a Bachelors in{" "}
+                        <span className="highlight">COMPUTER SCIENCE</span> at
+                        California State University, Fullerton.
+                    </p>
+
+                    <p>
+                        During my free time, I enjoy spending time with my
+                        family and reading.
+                    </p>
+
+                    <p>
+                        Links below if you would like to{" "}
+                        <span className="highlight">CONNECT.</span>
+                    </p>
+                </section>
+
+                <div className="divider" />
+
+                <section id="projects">
+                    <h1 className="subtitle">PROJECTS</h1>
+                    <p>My work goes here...</p>
+                </section>
+
+                <div className="divider" />
+
+                <section id="contact">
+                    <h1 className="subtitle">CONTACT</h1>
+                    <p>Email: example@email.com</p>
+                </section>
+
+                <div className="divider" />
+            </div>
 
             <Footer />
         </main>

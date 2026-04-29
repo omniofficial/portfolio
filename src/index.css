@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*------------ FONTS ------------ */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Inter:wght@400;500;700&family=Noto+Serif+JP:wght@200;300;400;700&display=swap");
 
 @font-face {
@@ -26,6 +27,24 @@ body {
     font-feature-settings: "palt";
     letter-spacing: 0.4px;
     font-weight: 400;
+    font-size: 12px;
+}
+
+/*------- MISC. -------*/
+.subtitle {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 40px 0;
+}
+
+.page {
+    padding: 0 150px;
 }
 
 /*------------ HEADER SECTION ------------ */
@@ -37,7 +56,7 @@ body {
     padding: 20px 30px;
     background-color: black;
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-left {
@@ -81,11 +100,9 @@ body {
 .nav-right a {
     color: white;
     text-decoration: none;
-
     font-size: 11px;
     letter-spacing: 2px;
     opacity: 0.75;
-
     transition:
         opacity 0.2s ease,
         transform 0.2s ease;
@@ -95,9 +112,58 @@ body {
     opacity: 1;
 }
 
-/*------------ HOME SECTION ------------ */
-.subtitle {
+/*------------------ HOME SECTION ------------------ */
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------- HERO SECTION -------*/
+.hero {
+    display: flex;
+    position: relative;
+    background: url("./assets/your-image.jpg") center/cover no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero-center {
+    text-align: center;
+}
+
+.hero-name {
+    font-family: "TerminaTestNormal";
+    font-size: 48px;
+}
+
+.hero-handle {
+    font-size: 10px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+.hero-quote {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    max-width: 320px;
+    text-align: right;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+/*------- ABOUT SECTION -------*/
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.highlight {
     font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+    opacity: 0.5;
 }

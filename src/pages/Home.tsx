@@ -8,7 +8,11 @@ export default function Home() {
 
             <section id="home" className="hero">
                 <div className="hero-center">
-                    <h1 className="hero-name">Adrian Diaz</h1>
+                    <h1 className="hero-name">
+                        <span className="hero-first">ADRIAN</span>
+                        <span className="hero-colon">:</span>
+                        <span className="hero-last">DIAZ</span>
+                    </h1>
                     <div className="hero-handle">
                         <p className="hero-handle-text">@omniofficial</p>
                     </div>
@@ -24,7 +28,7 @@ export default function Home() {
                 <div className="divider" />
 
                 <section className="about">
-                    <h1 className="subtitle">ABOUT ME</h1>
+                    <h1 className="subtitle">./about_me</h1>
                     <p>
                         Pursuing a Bachelors in{" "}
                         <span className="highlight">COMPUTER SCIENCE</span> at
@@ -45,14 +49,14 @@ export default function Home() {
                 <div className="divider" />
 
                 <section id="projects">
-                    <h1 className="subtitle">PROJECTS</h1>
+                    <h1 className="subtitle">./projects</h1>
                     <p>My work goes here...</p>
                 </section>
 
                 <div className="divider" />
 
                 <section id="contact">
-                    <h1 className="subtitle">CONTACT</h1>
+                    <h1 className="subtitle">./contact</h1>
                     <p>Email: example@email.com</p>
                 </section>
 

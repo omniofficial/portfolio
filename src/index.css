@@ -61,7 +61,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
+    padding: 15px 30px;
     background-color: black;
     color: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -131,10 +131,24 @@ body {
 .hero {
     display: flex;
     position: relative;
-    background: url("./assets/your-image.jpg") center/cover no-repeat;
+    background: url("./assets/officialhomepage.jpg") center/cover no-repeat;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.298);
+    z-index: 1;
+}
+
+.hero-center,
+.hero-quote {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-center {
@@ -143,8 +157,22 @@ body {
 
 .hero-name {
     font-family: "Cormorant Garamond", serif;
-
     font-size: 48px;
+    letter-spacing: 6px;
+}
+
+.hero-first {
+    font-weight: 700;
+}
+
+.hero-colon {
+    margin: 0 6px;
+}
+
+.hero-last {
+    font-weight: 300;
+    opacity: 0.9;
+    font-style: italic;
 }
 
 .hero-handle-text {
@@ -160,7 +188,7 @@ body {
     max-width: 320px;
     text-align: right;
     font-size: 12px;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 /*------- ABOUT SECTION -------*/
@@ -168,7 +196,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 13px;
     line-height: 1.6;
 }
 

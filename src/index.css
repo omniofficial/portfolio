@@ -33,7 +33,7 @@ body {
     font-feature-settings: "palt";
     letter-spacing: 0.4px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /*------- MISC. -------*/
@@ -68,7 +68,7 @@ body {
 }
 
 .nav-left {
-    font-size: 11px;
+    font-size: 18px;
     letter-spacing: 2px;
     opacity: 0.6;
 }
@@ -83,7 +83,7 @@ body {
 
 .header-title {
     font-family: "TerminaTestExtraLight";
-    font-size: 17px;
+    font-size: 30px;
     letter-spacing: 2px;
 }
 
@@ -96,9 +96,10 @@ body {
 }
 
 .version {
-    font-size: 8px;
+    font-family: "TerminaTestExtraLight";
+    font-size: 15px;
     letter-spacing: 2px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .nav-right {
@@ -109,7 +110,7 @@ body {
 .nav-right a {
     color: white;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 18px;
     letter-spacing: 2px;
     opacity: 0.75;
     transition:
@@ -131,17 +132,17 @@ body {
 .hero {
     display: flex;
     position: relative;
-    background: url("./assets/officialhomepage.jpg") center/cover no-repeat;
+    background: url("./assets/coghome.jpg") center/cover no-repeat;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 70vh;
 }
 
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.298);
+    background: rgba(60, 56, 56, 0.298);
     z-index: 1;
 }
 
@@ -175,6 +176,21 @@ body {
     font-style: italic;
 }
 
+.hero-handle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-handle-logo {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    opacity: 0.8;
+    border: 1px solid rgb(255, 252, 252);
+}
+
 .hero-handle-text {
     font-size: 10px;
     letter-spacing: 2px;
@@ -187,7 +203,7 @@ body {
     right: 40px;
     max-width: 320px;
     text-align: right;
-    font-size: 12px;
+    font-size: 25px;
     opacity: 0.6;
 }
 

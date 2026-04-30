@@ -1,5 +1,6 @@
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
+import logo from "../assets/logo.png";
 
 export default function Home() {
     return (
@@ -14,6 +15,11 @@ export default function Home() {
                         <span className="hero-last">DIAZ</span>
                     </h1>
                     <div className="hero-handle">
+                        <img
+                            className="hero-handle-logo"
+                            src={logo}
+                            alt="logo"
+                        />
                         <p className="hero-handle-text">@omniofficial</p>
                     </div>
                 </div>

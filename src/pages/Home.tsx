@@ -1,6 +1,9 @@
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
-import logo from "../assets/logo.png";
+import pfp_logo from "../assets/logo.png";
+import github_logo from "../assets/github.svg";
+import linkedin_logo from "../assets/linkedin.svg";
+import discord_logo from "../assets/discord.svg";
 
 export default function Home() {
     return (
@@ -17,7 +20,7 @@ export default function Home() {
                     <div className="hero-handle">
                         <img
                             className="hero-handle-logo"
-                            src={logo}
+                            src={pfp_logo}
                             alt="logo"
                         />
                         <p className="hero-handle-text">@omniofficial</p>
@@ -56,10 +59,13 @@ export default function Home() {
 
                     <div className="social-links">
                         <div className="social-item">
-                            <a href="https://google.com">
+                            <a
+                                href="https://github.com/omniofficial"
+                                target="_blank"
+                            >
                                 <img
                                     className="social-image"
-                                    src={logo}
+                                    src={github_logo}
                                     alt="github_image"
                                 />
                             </a>
@@ -68,10 +74,13 @@ export default function Home() {
                         </div>
 
                         <div className="social-item">
-                            <a href="https://google.com">
+                            <a
+                                href="https://www.linkedin.com/in/diaz2/"
+                                target="_blank"
+                            >
                                 <img
                                     className="social-image"
-                                    src={logo}
+                                    src={linkedin_logo}
                                     alt="linkedin_image"
                                 />
                             </a>
@@ -79,10 +88,10 @@ export default function Home() {
                         </div>
 
                         <div className="social-item">
-                            <a href="https://google.com">
+                            <a href="https://google.com" target="_blank">
                                 <img
                                     className="social-image"
-                                    src={logo}
+                                    src={discord_logo}
                                     alt="discord_image"
                                 />
                             </a>

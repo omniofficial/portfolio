@@ -36,20 +36,53 @@ export default function Home() {
                 <section className="about">
                     <h1 className="subtitle">./about_me</h1>
                     <p>
-                        Pursuing a Bachelors in{" "}
-                        <span className="highlight">COMPUTER SCIENCE</span> at
-                        California State University, Fullerton.
+                        I’m a Computer Science student at{" "}
+                        <span className="highlight">
+                            CALIFORNIA STATE UNIVERSITY, FULLERTON,
+                        </span>{" "}
+                        focused on building reusable and reliable software.
                     </p>
 
                     <p>
-                        During my free time, I enjoy spending time with my
-                        family and reading.
+                        I enjoy creating full stack applications, learning new
+                        technologies, and working on projects with intent. I am
+                        always open to collaboration with others in the
+                        community.
                     </p>
 
                     <p>
-                        Links below if you would like to{" "}
+                        Please visit any of the links below if you would like to{" "}
                         <span className="highlight">CONNECT.</span>
                     </p>
+
+                    <div className="social-links">
+                        <div className="github">
+                            <img
+                                className="social-image"
+                                src={logo}
+                                alt="github_image"
+                            />
+                            <p>Github</p>
+                        </div>
+
+                        <div className="linkedin">
+                            <img
+                                className="social-image"
+                                src={logo}
+                                alt="linkedin_image"
+                            />
+                            <p>Linkedin</p>
+                        </div>
+
+                        <div className="discord">
+                            <img
+                                className="social-image"
+                                src={logo}
+                                alt="discord_image"
+                            />
+                            <p>@omniofficial</p>
+                        </div>
+                    </div>
                 </section>
 
                 <div className="divider" />

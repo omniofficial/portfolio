@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*------------ FONTS ------------ */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Inter:wght@400;500;700&family=Noto+Serif+JP:wght@200;300;400;700&display=swap");
 
@@ -26,6 +20,12 @@
     font-style: normal;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: #000;
     color: #fff;
@@ -33,7 +33,7 @@ body {
     font-feature-settings: "palt";
     letter-spacing: 0.4px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /*------- MISC. -------*/
@@ -61,7 +61,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 20px 30px;
     background-color: black;
     color: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -133,16 +133,18 @@ body {
     display: flex;
     position: relative;
     background: url("./assets/coghome.jpg") center/cover no-repeat;
-    align-items: center;
-    justify-content: center;
     height: 70vh;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 80px;
+    color: #000;
 }
 
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(60, 56, 56, 0.298);
+    background: rgba(236, 232, 232, 0.298);
     z-index: 1;
 }
 
@@ -153,13 +155,17 @@ body {
 }
 
 .hero-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 8px;
 }
 
 .hero-name {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 48px;
-    letter-spacing: 6px;
+    font-family: "TerminaTestExtraLight";
+    font-size: 80px;
+    letter-spacing: 5px;
 }
 
 .hero-first {
@@ -172,8 +178,6 @@ body {
 
 .hero-last {
     font-weight: 300;
-    opacity: 0.9;
-    font-style: italic;
 }
 
 .hero-handle {
@@ -184,27 +188,27 @@ body {
 }
 
 .hero-handle-logo {
-    width: 18px;
-    height: 18px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
-    opacity: 0.8;
-    border: 1px solid rgb(255, 252, 252);
+    border: 2px solid rgb(249, 5, 5);
+    border-radius: 50%;
 }
 
 .hero-handle-text {
-    font-size: 10px;
+    font-size: 20px;
     letter-spacing: 2px;
-    opacity: 0.5;
 }
 
 .hero-quote {
+    font-style: italic;
     position: absolute;
     bottom: 30px;
-    right: 40px;
+    right: 80px;
     max-width: 320px;
     text-align: right;
-    font-size: 25px;
-    opacity: 0.6;
+    font-size: 22px;
+    color: #000;
 }
 
 /*------- ABOUT SECTION -------*/
@@ -218,5 +222,18 @@ body {
 .highlight {
     font-family: "Cormorant Garamond", serif;
     letter-spacing: 2px;
-    opacity: 0.5;
+    opacity: 0.6;
+}
+
+.social-links {
+    display: flex;
+    gap: 30px;
+}
+
+.social-image {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border: 2px solid rgb(249, 5, 5);
+    border-radius: 50%;
 }

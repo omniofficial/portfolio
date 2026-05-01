@@ -43,46 +43,53 @@ export default function Home() {
                         focused on building reusable and reliable software.
                     </p>
 
-                    <p>
+                    <p id="last-pp">
                         I enjoy creating full stack applications, learning new
                         technologies, and working on projects with intent. I am
-                        always open to collaboration with others in the
-                        community.
+                        always open to collaboration with others.
                     </p>
-
-                    <p>
-                        Please visit any of the links below if you would like to{" "}
-                        <span className="highlight">CONNECT.</span>
+                    <div className="divider-small"></div>
+                    <p id="p-center">
+                        Please visit any of the images below if you would like
+                        to <span className="highlight">CONNECT.</span>
                     </p>
 
                     <div className="social-links">
-                        <div className="github">
-                            <img
-                                className="social-image"
-                                src={logo}
-                                alt="github_image"
-                            />
+                        <div className="social-item">
+                            <a href="https://google.com">
+                                <img
+                                    className="social-image"
+                                    src={logo}
+                                    alt="github_image"
+                                />
+                            </a>
+
                             <p>Github</p>
                         </div>
 
-                        <div className="linkedin">
-                            <img
-                                className="social-image"
-                                src={logo}
-                                alt="linkedin_image"
-                            />
-                            <p>Linkedin</p>
+                        <div className="social-item">
+                            <a href="https://google.com">
+                                <img
+                                    className="social-image"
+                                    src={logo}
+                                    alt="linkedin_image"
+                                />
+                            </a>
+                            <p>LinkedIn</p>
                         </div>
 
-                        <div className="discord">
-                            <img
-                                className="social-image"
-                                src={logo}
-                                alt="discord_image"
-                            />
+                        <div className="social-item">
+                            <a href="https://google.com">
+                                <img
+                                    className="social-image"
+                                    src={logo}
+                                    alt="discord_image"
+                                />
+                            </a>
                             <p>@omniofficial</p>
                         </div>
                     </div>
+                    <div className="divider-small"></div>
                 </section>
 
                 <div className="divider" />

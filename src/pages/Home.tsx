@@ -103,6 +103,13 @@ export default function Home() {
 
                 <div className="divider" />
 
+                <section id="experience">
+                    <h1 className="subtitle">./experience</h1>
+                    <p>My work goes here...</p>
+                </section>
+
+                <div className="divider" />
+
                 <section id="projects">
                     <h1 className="subtitle">./projects</h1>
                     <p>My work goes here...</p>

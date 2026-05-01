@@ -144,7 +144,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(236, 232, 232, 0.298);
+    background: rgba(202, 194, 194, 0.558);
     z-index: 1;
 }
 

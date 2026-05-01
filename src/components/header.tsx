@@ -16,9 +16,10 @@ export function Header() {
 
             <nav className="nav-right">
                 <a href="#home">HOME</a>
+                <a href="#experience">EXPERIENCE</a>
                 <a href="#projects">PROJECTS</a>
                 <a href="#contact">CONTACT</a>
-                <a href="/blog">BLOG</a>
+                <a href="#resume">RESUME</a>
             </nav>
         </header>
     );

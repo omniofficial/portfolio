@@ -33,7 +33,7 @@ body {
     font-feature-settings: "palt";
     letter-spacing: 0.4px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 /*------- MISC. -------*/
@@ -50,7 +50,7 @@ body {
 }
 
 .page {
-    padding: 0 150px;
+    padding: 0 200px;
 }
 
 /*------------ HEADER SECTION ------------ */
@@ -70,7 +70,7 @@ body {
 .nav-left {
     font-size: 18px;
     letter-spacing: 2px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .nav-center {
@@ -207,7 +207,7 @@ body {
     right: 80px;
     max-width: 320px;
     text-align: right;
-    font-size: 22px;
+    font-size: 20px;
     color: #000;
 }
 
@@ -216,7 +216,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    line-height: 1.6;
 }
 
 .highlight {
@@ -269,4 +268,59 @@ body {
 .social-item:hover .social-image {
     transform: scale(1.1);
     opacity: 1;
+}
+
+/*------- EXPERIENCE SECTION -------*/
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 25px;
+}
+.experience-card {
+    padding: 25px 30px;
+    border: 1px solid rgba(255, 248, 248, 0.735);
+    background: rgba(224, 211, 211, 0.111);
+    border-radius: 10px;
+    transition:
+        transform 0.2s ease,
+        border 0.2s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-2px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.experience-card h2 {
+    font-family: "TerminaTestExtraLight";
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.experience-company {
+    opacity: 0.7;
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+.experience-data {
+    text-align: right;
+    opacity: 0.6;
+}
+
+.experience-card ul {
+    padding-left: 18px;
+    line-height: 1.6;
+}
+
+.experience-card li {
+    margin-bottom: 8px;
 }

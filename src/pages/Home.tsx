@@ -105,7 +105,82 @@ export default function Home() {
 
                 <section id="experience">
                     <h1 className="subtitle">./experience</h1>
-                    <p>My work goes here...</p>
+
+                    <div className="experience-list">
+                        <div className="experience-card">
+                            <div className="experience-header">
+                                <div>
+                                    <h2>Data Entry Specialist</h2>
+                                    <p className="experience-company">
+                                        Smile Brands Inc.
+                                    </p>
+                                </div>
+
+                                <div className="experience-data">
+                                    <p>April 2024 – Present</p>
+                                    <p>Costa Mesa, CA</p>
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    Configured dental insurance plans via
+                                    Dentrix Ascend, ensuring system accuracy and
+                                    compliance with submitted tickets.
+                                </li>
+                                <li>
+                                    Supported 600+ offices by resolving
+                                    insurance and data issues.
+                                </li>
+                                <li>
+                                    Implemented data validation protocols using
+                                    advanced Excel functions to identify and
+                                    resolve data inconsistencies, improving fee
+                                    schedule accuracy by 25%.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="experience-card">
+                            <div className="experience-header">
+                                <div>
+                                    <h2>Software Engineering Intern</h2>
+                                    <p className="experience-company">
+                                        UC Irvine
+                                    </p>
+                                </div>
+
+                                <div className="experience-data">
+                                    <p>July 2021 – Aug 2021</p>
+                                    <p>Irvine, CA</p>
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    Developed Python code for autonomous motion
+                                    planning, modeling navigation logic and
+                                    pathfinding algorithms.
+                                </li>
+                                <li>
+                                    Implemented Dijkstra’s algorithm to improve
+                                    route planning efficiency for obstacle rich
+                                    environments.
+                                </li>
+                                <li>
+                                    Visualized algorithm behavior using
+                                    Matplotlib and mathematical libraries to
+                                    identify performance bottlenecks and enhance
+                                    motion logic.
+                                </li>
+                                <li>
+                                    Contributed to detailed technical
+                                    documentation on algorithm design,
+                                    facilitating team knowledge sharing.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
 
                 <div className="divider" />

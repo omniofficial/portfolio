@@ -19,7 +19,12 @@ export function Header() {
                 <a href="#experience">EXPERIENCE</a>
                 <a href="#projects">PROJECTS</a>
                 <a href="#contact">CONTACT</a>
-                <a href="#resume">RESUME</a>
+                <a
+                    href="https://github.com/omniofficial/resume/blob/main/resume.pdf"
+                    target="_blank"
+                >
+                    RESUME
+                </a>
             </nav>
         </header>
     );

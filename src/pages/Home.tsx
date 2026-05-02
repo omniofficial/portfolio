@@ -406,7 +406,7 @@ export default function Home() {
 
                 <section id="contact">
                     <h1 className="subtitle">./contact</h1>
-                    <p>Email: example@email.com</p>
+                    <p>Email: adrian.b.diaz04@gmail.com</p>
                 </section>
 
                 <div className="divider" />

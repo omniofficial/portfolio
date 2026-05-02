@@ -279,7 +279,7 @@ body {
 }
 .experience-card {
     padding: 25px 30px;
-    border: 1px solid rgba(255, 248, 248, 0.735);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     background: rgba(255, 255, 255, 0.06);
 
     border-radius: 10px;
@@ -425,4 +425,15 @@ body {
 .project-link:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-1px);
+}
+
+.footer-container {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 25px 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }

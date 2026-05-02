@@ -350,7 +350,7 @@ export default function Home() {
                                 <div className="project-links">
                                     <a
                                         className="project-link"
-                                        href="https://github.com"
+                                        href="https://github.com/christian1251/481-Capstone"
                                         target="_blank"
                                         rel="noreferrer"
                                     >

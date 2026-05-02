@@ -50,7 +50,7 @@ body {
 }
 
 .page {
-    padding: 0 200px;
+    padding: 0 250px;
 }
 
 /*------------ HEADER SECTION ------------ */
@@ -280,7 +280,8 @@ body {
 .experience-card {
     padding: 25px 30px;
     border: 1px solid rgba(255, 248, 248, 0.735);
-    background: rgba(224, 211, 211, 0.111);
+    background: rgba(255, 255, 255, 0.06);
+
     border-radius: 10px;
     transition:
         transform 0.2s ease,
@@ -323,4 +324,105 @@ body {
 
 .experience-card li {
     margin-bottom: 8px;
+}
+
+.experience-card-text {
+    opacity: 0.8;
+}
+
+/*------- PROJECTS SECTION -------*/
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.project-card {
+    display: flex;
+    gap: 25px;
+    padding: 25px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    transition:
+        transform 0.2s ease,
+        border 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-image {
+    flex-shrink: 0;
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-title {
+    font-family: "TerminaTestExtraLight";
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.project-description {
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.tech-stack {
+    font-size: 13px;
+    padding: 4px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    opacity: 0.85;
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    gap: 8px;
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.project-link img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    filter: invert(1);
+}
+
+.project-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
 }

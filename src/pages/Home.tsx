@@ -4,6 +4,10 @@ import pfp_logo from "../assets/logo.png";
 import github_logo from "../assets/github.svg";
 import linkedin_logo from "../assets/linkedin.svg";
 import discord_logo from "../assets/discord.svg";
+import azure from "../assets/azure.webp";
+import accountabuddy from "../assets/accountabuddy-logo.png";
+import rubix_tutor from "../assets/rubix_cube.webp";
+import janemba from "../assets/janemba.png";
 
 export default function Home() {
     return (
@@ -122,23 +126,26 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <ul>
-                                <li>
-                                    Configured dental insurance plans via
-                                    Dentrix Ascend, ensuring system accuracy and
-                                    compliance with submitted tickets.
-                                </li>
-                                <li>
-                                    Supported 600+ offices by resolving
-                                    insurance and data issues.
-                                </li>
-                                <li>
-                                    Implemented data validation protocols using
-                                    advanced Excel functions to identify and
-                                    resolve data inconsistencies, improving fee
-                                    schedule accuracy by 25%.
-                                </li>
-                            </ul>
+                            <div className="experience-card-text">
+                                <ul>
+                                    <li>
+                                        Configured dental insurance plans via
+                                        Dentrix Ascend, ensuring system accuracy
+                                        and compliance with submitted tickets.
+                                    </li>
+                                    <li>
+                                        Supported 600+ offices by resolving
+                                        insurance and data issues.
+                                    </li>
+                                    <li>
+                                        Implemented data validation protocols
+                                        using advanced Excel functions to
+                                        identify and resolve data
+                                        inconsistencies, improving fee schedule
+                                        accuracy by 25%.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div className="experience-card">
@@ -156,29 +163,31 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <ul>
-                                <li>
-                                    Developed Python code for autonomous motion
-                                    planning, modeling navigation logic and
-                                    pathfinding algorithms.
-                                </li>
-                                <li>
-                                    Implemented Dijkstra’s algorithm to improve
-                                    route planning efficiency for obstacle rich
-                                    environments.
-                                </li>
-                                <li>
-                                    Visualized algorithm behavior using
-                                    Matplotlib and mathematical libraries to
-                                    identify performance bottlenecks and enhance
-                                    motion logic.
-                                </li>
-                                <li>
-                                    Contributed to detailed technical
-                                    documentation on algorithm design,
-                                    facilitating team knowledge sharing.
-                                </li>
-                            </ul>
+                            <div className="experience-card-text">
+                                <ul>
+                                    <li>
+                                        Developed Python code for autonomous
+                                        motion planning, modeling navigation
+                                        logic and pathfinding algorithms.
+                                    </li>
+                                    <li>
+                                        Implemented Dijkstra’s algorithm to
+                                        improve route planning efficiency for
+                                        obstacle rich environments.
+                                    </li>
+                                    <li>
+                                        Visualized algorithm behavior using
+                                        Matplotlib and mathematical libraries to
+                                        identify performance bottlenecks and
+                                        enhance motion logic.
+                                    </li>
+                                    <li>
+                                        Contributed to detailed technical
+                                        documentation on algorithm design,
+                                        facilitating team knowledge sharing.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -187,7 +196,210 @@ export default function Home() {
 
                 <section id="projects">
                     <h1 className="subtitle">./projects</h1>
-                    <p>My work goes here...</p>
+
+                    <div className="projects-list">
+                        <div className="project-card">
+                            <img
+                                className="project-image"
+                                src={azure}
+                                alt="project preview"
+                            />
+
+                            <div className="project-content">
+                                <h2 className="project-title">
+                                    Azure Cloud Migration Project (IN_PROGRESS)
+                                </h2>
+
+                                <p className="project-description">
+                                    A cloud migration project that moved a
+                                    Windows Server 2022 Active Directory
+                                    environment to Microsoft Azure. It involved
+                                    designing secure virtual networking with
+                                    subnets and Network Security Groups,
+                                    implementing security hardening, and
+                                    planning a rollout across 20 virtual
+                                    machines.
+                                </p>
+
+                                <div className="project-tech">
+                                    <div className="tech-stack">
+                                        Microsoft Azure
+                                    </div>
+                                    <div className="tech-stack">
+                                        Windows Server
+                                    </div>
+                                    <div className="tech-stack">
+                                        Active Directory
+                                    </div>
+                                </div>
+
+                                <div className="project-links">
+                                    <a
+                                        className="project-link"
+                                        href="https://google.com"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <img
+                                            src={pfp_logo}
+                                            alt="documentation"
+                                        />
+                                        <span>Documentation</span>
+                                    </a>
+
+                                    <a
+                                        className="project-link"
+                                        href="https://google.com"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <img
+                                            src={pfp_logo}
+                                            alt="migration_plan"
+                                        />
+                                        <span>Migration Plan</span>
+                                    </a>
+
+                                    <a
+                                        className="project-link"
+                                        href="https://google.com"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <img
+                                            src={pfp_logo}
+                                            alt="post_completion"
+                                        />
+                                        <span>Post Completion (Write Up)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-card">
+                            <img
+                                className="project-image"
+                                src={accountabuddy}
+                                alt="project preview"
+                            />
+
+                            <div className="project-content">
+                                <h2 className="project-title">Accountabuddy</h2>
+
+                                <p className="project-description">
+                                    A mobile application designed to improve
+                                    task completion through social
+                                    accountability. Users can add friends, share
+                                    tasks, and track progress within a
+                                    collaborative environment. Built with
+                                    Firebase to support real-time updates,
+                                    comments, and user interactions across 100+
+                                    active users.
+                                </p>
+
+                                <div className="project-tech">
+                                    <div className="tech-stack">
+                                        React Native
+                                    </div>
+                                    <div className="tech-stack">Firebase</div>
+                                    <div className="tech-stack">Typescript</div>
+                                </div>
+
+                                <div className="project-links">
+                                    <a
+                                        className="project-link"
+                                        href="https://github.com/jguan79/accountabuddy"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <img src={github_logo} alt="github" />
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-card">
+                            <img
+                                className="project-image"
+                                src={rubix_tutor}
+                                alt="project preview"
+                            />
+
+                            <div className="project-content">
+                                <h2 className="project-title">Rubix Tutor</h2>
+
+                                <p className="project-description">
+                                    An AI-powered Rubik’s Cube solver that uses
+                                    IDA* and IDDFS to explore large state spaces
+                                    and generate optimal move sequences.
+                                    Designed an admissible heuristic using a
+                                    corner orientation pattern database built
+                                    with BFS, improving average solve depth.
+                                    Includes a visualization interface built
+                                    with Matplotlib to display cube states and
+                                    recommended moves.
+                                </p>
+
+                                <div className="project-tech">
+                                    <div className="tech-stack">Python</div>
+                                    <div className="tech-stack">NumPy</div>
+                                    <div className="tech-stack">Matplotlib</div>
+                                </div>
+
+                                <div className="project-links">
+                                    <a
+                                        className="project-link"
+                                        href="https://github.com"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <img src={github_logo} alt="github" />
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-card">
+                            <img
+                                className="project-image"
+                                src={janemba}
+                                alt="project preview"
+                            />
+
+                            <div className="project-content">
+                                <h2 className="project-title">Janemba</h2>
+
+                                <p className="project-description">
+                                    A top-down compiler built in Python using
+                                    predictive parsing techniques. It reads and
+                                    preprocesses source files by tokenizing
+                                    input, removing whitespace and formatting
+                                    inconsistencies, and translating code into
+                                    Python.
+                                </p>
+
+                                <div className="project-tech">
+                                    <div className="tech-stack">Python</div>
+                                    <div className="tech-stack">Node.js</div>
+                                    <div className="tech-stack">Postgres</div>
+                                </div>
+
+                                <div className="project-links">
+                                    <a
+                                        className="project-link"
+                                        href="https://github.com/omniofficial/janemba"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <img src={github_logo} alt="github" />
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <div className="divider" />
